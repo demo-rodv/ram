@@ -19,9 +19,9 @@ jobs:
         uses: actions/setup-java@v2
         with: 
           distribution: 'adopt' # See 'Supported distributions' for available options
-          java-version: '16'
+          java-version: '11'
       - name: Build with Maven
-        run: mvn -B package --file pom.xml
+        run: mvn clean install
       - name: Synopsys Detect
         uses: blackducksoftware/github-action@2.0.0
         with: 
