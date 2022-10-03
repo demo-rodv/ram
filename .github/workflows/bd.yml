@@ -23,7 +23,7 @@ jobs:
           java-version: '11'
           
       - name: Build with Maven
-        run: mvn clean install
+        run: mvn -B compile
         
         env:
           BLACKDUCK_URL: ${{ secrets.BLACKDUCK_URL }}
