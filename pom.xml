@@ -88,39 +88,12 @@
         </developer>
     </developers>
 
-    <mailingLists>
-        <mailingList>
-            <name>OWASP WebGoat Mailing List</name>
-            <subscribe>https://lists.owasp.org/mailman/listinfo/owasp-webgoat</subscribe>
-            <unsubscribe>Owasp-webgoat-request@lists.owasp.org</unsubscribe>
-            <post>owasp-webgoat@lists.owasp.org</post>
-            <archive>http://lists.owasp.org/pipermail/owasp-webgoat/</archive>
-        </mailingList>
-    </mailingLists>
-
-    <scm>
-        <url>https://github.com/WebGoat/WebGoat</url>
-        <connection>scm:git:git@github.com:WebGoat/WebGoat.git</connection>
-        <developerConnection>scm:git:git@github.com:WebGoat/WebGoat.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-
-    <issueManagement>
-        <system>Github Issues</system>
-        <url>https://github.com/WebGoat/WebGoat/issues</url>
-    </issueManagement>
-
-    <ciManagement>
-        <system>Travis CI</system>
-        <url>https://travis-ci.org/WebGoat/WebGoat</url>
-    </ciManagement>
-
     <properties>
         <!-- Use UTF-8 Encoding -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.compiler.source>15</maven.compiler.source>
-        <maven.compiler.target>15</maven.compiler.target>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
 
         <!-- This build number will be ubdated by Travis-CI -->
         <build.number>build</build.number>
@@ -195,8 +168,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
-                    <source>15</source>
-                    <target>15</target>
+                    <source>11</source>
+                    <target>11</target>
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
