@@ -3,7 +3,7 @@ on:
   pull_request:
   push:
     branches:
-      - main
+      - experimental
       - develop
       - release/*
 
@@ -12,7 +12,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
         java: [11]
     steps:
       - uses: actions/checkout@v2
