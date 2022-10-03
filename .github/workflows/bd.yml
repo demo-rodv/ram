@@ -24,14 +24,12 @@ jobs:
           
       - name: Build with Maven
         run: mvn -B compile
-        
-        env:
-          BLACKDUCK_URL: ${{ secrets.BLACKDUCK_URL }}
-          BLACKDUCK_API_TOKEN: ${{ secrets.BLACKDUCK_API_TOKEN }}
-          PROJECT: rodvram
-          BRANCH: ${GITHUB_REF##*/}
       
-      - name: Synopsys Detect
-        uses: blackducksoftware/github-action@2.0.0
-        with: 
-          args: --blackduck.url=$BLACKDUCK_URL --blackduck.api.token=$BLACKDUCK_API_TOKEN --detect.project.name=$PROJECT --detect.project.version.name=$BRANCH
+      - name: Run Synopsys Detect
+        uses: synopsys-sig/detect-action@v0.3.0
+        with:
+          scan-mode: INTELLIGENT
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          detect-version: 7.9.0
+          blackduck-url: ${{ secrets.BLACKDUCK_URL }}
+          blackduck-api-token: ${{ secrets.BLACKDUCK_API_TOKEN }}
