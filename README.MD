@@ -1,14 +1,5 @@
-# WebGoat 8: A deliberately insecure Web Application
 
-[![Build Status](https://travis-ci.org/WebGoat/WebGoat.svg?branch=develop)](https://travis-ci.org/WebGoat/WebGoat)
-[![Coverage Status](https://coveralls.io/repos/WebGoat/WebGoat/badge.svg?branch=develop&service=github)](https://coveralls.io/github/WebGoat/WebGoat?branch=master)
-[![Codacy Badge](https://api.codacy.com/project/badge/b69ee3a86e3b4afcaf993f210fccfb1d)](https://www.codacy.com/app/dm/WebGoat)
-[![OWASP Labs](https://img.shields.io/badge/owasp-lab%20project-f7b73c.svg)](https://www.owasp.org/index.php/OWASP_Project_Inventory#tab=Labs_Projects)
-[![GitHub release](https://img.shields.io/github/release/WebGoat/WebGoat.svg)](https://github.com/WebGoat/WebGoat/releases/latest)
-[![Gitter](https://badges.gitter.im/OWASPWebGoat/community.svg)](https://gitter.im/OWASPWebGoat/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-
-
-## 1. Run using Docker
+## 1. This is my first commit to test automation.
 
 Every release is also published on [DockerHub]((https://hub.docker.com/r/webgoat/webgoat-8.0/)).
 
@@ -75,7 +66,7 @@ Now we are ready to run the project. WebGoat 8.x is using Spring-Boot.
 ```Shell
 mvn -pl webgoat-server spring-boot:run
 ```
-... you should be running webgoat on localhost:8080/WebGoat momentarily
+... you should be running WebGoat on localhost:8080/WebGoat momentarily
 
 
 To change the IP address add the following variable to the WebGoat/webgoat-container/src/main/resources/application.properties file:
