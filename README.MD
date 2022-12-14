@@ -1,5 +1,6 @@
 
 ## 1. This is my first commit to test automation.
+Just triggering another workflow
 
 Every release is also published on [DockerHub]((https://hub.docker.com/r/webgoat/webgoat-8.0/)).
 
